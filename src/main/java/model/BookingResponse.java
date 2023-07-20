@@ -1,6 +1,9 @@
 package model;
 
 public class BookingResponse {
+    public int bookingId;
+    public Booking booking;
+
     public int getBookingId() {
         return bookingId;
     }
@@ -9,8 +12,6 @@ public class BookingResponse {
         this.bookingId = bookingId;
     }
 
-    public int bookingId;
-
     public Booking getBooking() {
         return booking;
     }
@@ -18,7 +19,5 @@ public class BookingResponse {
     public void setBooking(Booking booking) {
         this.booking = booking;
     }
-
-    public Booking booking;
 
 }

@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.*;
 @Slf4j
 public class Main {
     public static void main(String[] args) throws Exception {
-
+        
         Booking bookingRequest = new BookingBuilder()
                 .withFirstname("Adam")
                 .withLastname("Sajewicz")
@@ -43,7 +43,6 @@ public class Main {
                 .withFailMessage("StatusCode is incorrect!")
                 .isEqualTo(200);
         log.info("Successfully verified that the StatusCode is equal to: " + 200);
-        
         log.info(httpResponse.body());
 
         BookingResponse bookingResponse = gson.fromJson(httpResponse.body(), BookingResponse.class);

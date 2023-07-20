@@ -1,6 +1,13 @@
 package model;
 
 public class Booking {
+    public String firstname;
+    public String lastname;
+    public int totalprice;
+    public boolean depositpaid;
+    public BookingDates bookingdates;
+    public String additionalneeds;
+
     public String getFirstname() {
         return firstname;
     }
@@ -8,8 +15,6 @@ public class Booking {
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
-
-    public String firstname;
 
     public String getLastname() {
         return lastname;
@@ -19,8 +24,6 @@ public class Booking {
         this.lastname = lastname;
     }
 
-    public String lastname;
-
     public int getTotalprice() {
         return totalprice;
     }
@@ -28,8 +31,6 @@ public class Booking {
     public void setTotalprice(int totalprice) {
         this.totalprice = totalprice;
     }
-
-    public int totalprice;
 
     public boolean isDepositpaid() {
         return depositpaid;
@@ -39,8 +40,6 @@ public class Booking {
         this.depositpaid = depositpaid;
     }
 
-    public boolean depositpaid;
-
     public BookingDates getBookingdates() {
         return bookingdates;
     }
@@ -49,8 +48,6 @@ public class Booking {
         this.bookingdates = bookingdates;
     }
 
-    public BookingDates bookingdates;
-
     public String getAdditionalneeds() {
         return additionalneeds;
     }
@@ -58,6 +55,4 @@ public class Booking {
     public void setAdditionalneeds(String additionalneeds) {
         this.additionalneeds = additionalneeds;
     }
-
-    public String additionalneeds;
 }
